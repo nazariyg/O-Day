@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1hB-Id-8lu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Event Presenter View Controller-->
+        <scene sceneID="OVL-hy-5hF">
+            <objects>
+                <viewController id="1hB-Id-8lu" customClass="EventPresenterViewController" customModule="EmmaCD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="01M-eY-ipg"/>
+                        <viewControllerLayoutGuide type="bottom" id="81l-gh-Ojb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9og-yy-uH5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-dA-tco" customClass="EventPresenterEventView" customModule="EmmaCD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXC-Hc-3ag">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XXC-Hc-3ag" secondAttribute="trailing" id="1Q6-Rt-JRn"/>
+                                    <constraint firstItem="XXC-Hc-3ag" firstAttribute="top" secondItem="Ru3-dA-tco" secondAttribute="top" id="2Ji-UT-knj"/>
+                                    <constraint firstAttribute="bottom" secondItem="XXC-Hc-3ag" secondAttribute="bottom" id="68F-6B-Bhb"/>
+                                    <constraint firstItem="XXC-Hc-3ag" firstAttribute="leading" secondItem="Ru3-dA-tco" secondAttribute="leading" id="JB8-61-YLp"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5D-rY-5Bq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq7-28-m4L">
+                                        <rect key="frame" x="282" y="526" width="36" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nq7-28-m4L" secondAttribute="height" multiplier="192:280" id="Ta3-bq-lpl"/>
+                                            <constraint firstAttribute="width" constant="36" id="UKj-JJ-bRM"/>
+                                        </constraints>
+                                        <state key="normal" image="Share"/>
+                                        <connections>
+                                            <action selector="shareBNAction" destination="1hB-Id-8lu" eventType="touchUpInside" id="wjb-Ji-Cxh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2K-zt-Zmb">
+                                        <rect key="frame" x="519" y="18" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="p2K-zt-Zmb" secondAttribute="height" multiplier="1:1" id="d5N-MZ-97J"/>
+                                            <constraint firstAttribute="width" constant="60" id="hD0-Kx-1I4"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="16" minY="16" maxX="16" maxY="16"/>
+                                        <state key="normal" image="Edit"/>
+                                        <connections>
+                                            <action selector="editBNAction" destination="1hB-Id-8lu" eventType="touchUpInside" id="8Gm-B8-tuj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh8-rw-GY7">
+                                        <rect key="frame" x="18" y="15" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yh8-rw-GY7" secondAttribute="height" id="4GQ-e0-mkU"/>
+                                            <constraint firstAttribute="width" constant="64" id="z1E-xR-rb2"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <action selector="eventsBNAction" destination="1hB-Id-8lu" eventType="touchUpInside" id="7bu-mD-G4z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yh8-rw-GY7" firstAttribute="centerX" secondItem="i5D-rY-5Bq" secondAttribute="centerX" multiplier="0.165" id="0Zh-r0-mMY"/>
+                                    <constraint firstItem="nq7-28-m4L" firstAttribute="centerY" secondItem="i5D-rY-5Bq" secondAttribute="centerY" multiplier="1.84" id="CXT-Rj-RXy"/>
+                                    <constraint firstItem="nq7-28-m4L" firstAttribute="centerX" secondItem="i5D-rY-5Bq" secondAttribute="centerX" id="DUq-rj-r2z"/>
+                                    <constraint firstItem="p2K-zt-Zmb" firstAttribute="centerX" secondItem="i5D-rY-5Bq" secondAttribute="centerX" multiplier="1.83" id="e7L-7y-oSm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ru3-dA-tco" firstAttribute="top" secondItem="01M-eY-ipg" secondAttribute="bottom" id="5pv-Ia-tUj"/>
+                            <constraint firstAttribute="trailing" secondItem="i5D-rY-5Bq" secondAttribute="trailing" id="7SG-oc-fzr"/>
+                            <constraint firstAttribute="bottom" secondItem="i5D-rY-5Bq" secondAttribute="bottom" id="BRK-7t-fdX"/>
+                            <constraint firstItem="yh8-rw-GY7" firstAttribute="top" secondItem="01M-eY-ipg" secondAttribute="bottom" constant="-5" id="N8s-DL-eXJ"/>
+                            <constraint firstItem="i5D-rY-5Bq" firstAttribute="leading" secondItem="9og-yy-uH5" secondAttribute="leading" id="YDy-H9-GWr"/>
+                            <constraint firstAttribute="trailing" secondItem="Ru3-dA-tco" secondAttribute="trailing" id="nxw-8T-iVU"/>
+                            <constraint firstItem="81l-gh-Ojb" firstAttribute="top" secondItem="Ru3-dA-tco" secondAttribute="bottom" id="ocN-fm-Yji"/>
+                            <constraint firstItem="p2K-zt-Zmb" firstAttribute="top" secondItem="01M-eY-ipg" secondAttribute="bottom" constant="-2" id="vYx-KQ-ktr"/>
+                            <constraint firstItem="i5D-rY-5Bq" firstAttribute="top" secondItem="9og-yy-uH5" secondAttribute="top" id="vco-mt-fwB"/>
+                            <constraint firstItem="Ru3-dA-tco" firstAttribute="leading" secondItem="9og-yy-uH5" secondAttribute="leading" id="yIy-R5-FwO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlsView" destination="i5D-rY-5Bq" id="rN5-rd-AVk"/>
+                        <outlet property="editBN" destination="p2K-zt-Zmb" id="HFH-Y9-Yxa"/>
+                        <outlet property="eventBGView" destination="XXC-Hc-3ag" id="gBb-q5-rPb"/>
+                        <outlet property="eventView" destination="Ru3-dA-tco" id="MID-YP-MuW"/>
+                        <outlet property="eventsBN" destination="yh8-rw-GY7" id="IwK-eg-V2l"/>
+                        <outlet property="shareBN" destination="nq7-28-m4L" id="FC4-Go-aZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITh-k9-uEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Edit" width="42" height="42"/>
+        <image name="Home" width="42" height="40"/>
+        <image name="Share" width="64" height="93"/>
+    </resources>
+</document>

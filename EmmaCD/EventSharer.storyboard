@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AL0-Ui-hOw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Sharer View Controller-->
+        <scene sceneID="5QF-Qg-yht">
+            <objects>
+                <viewController id="AL0-Ui-hOw" customClass="EventSharerViewController" customModule="EmmaCD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rFF-Y1-Xwg"/>
+                        <viewControllerLayoutGuide type="bottom" id="GrS-iN-M4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="irt-GJ-zmx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-b2-g9n">
+                                <rect key="frame" x="16" y="10" width="53" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBNAction" destination="AL0-Ui-hOw" eventType="touchUpInside" id="FCP-N4-UHA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLJ-Gn-Z2e">
+                                <rect key="frame" x="0.0" y="43" width="375" height="418"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2r9-mv-OFM">
+                                <rect key="frame" x="159" y="469" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2r9-mv-OFM" secondAttribute="height" multiplier="1:1" id="BoE-0w-9Wv"/>
+                                    <constraint firstAttribute="width" constant="56" id="tDl-9z-WV0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GrS-iN-M4z" firstAttribute="top" secondItem="RLJ-Gn-Z2e" secondAttribute="bottom" constant="206" id="7p8-sC-WRc"/>
+                            <constraint firstItem="MJl-b2-g9n" firstAttribute="top" secondItem="rFF-Y1-Xwg" secondAttribute="bottom" constant="10" id="C5K-UX-qeT"/>
+                            <constraint firstItem="2r9-mv-OFM" firstAttribute="centerX" secondItem="irt-GJ-zmx" secondAttribute="centerX" id="Cz9-8z-yHG"/>
+                            <constraint firstItem="2r9-mv-OFM" firstAttribute="top" secondItem="RLJ-Gn-Z2e" secondAttribute="bottom" constant="8" id="KZB-VD-1cd"/>
+                            <constraint firstItem="MJl-b2-g9n" firstAttribute="leading" secondItem="irt-GJ-zmx" secondAttribute="leadingMargin" id="SvW-0N-fty"/>
+                            <constraint firstItem="RLJ-Gn-Z2e" firstAttribute="top" secondItem="rFF-Y1-Xwg" secondAttribute="bottom" constant="43" id="WWX-Z3-UoL"/>
+                            <constraint firstAttribute="trailing" secondItem="RLJ-Gn-Z2e" secondAttribute="trailing" id="qO5-4O-M0c"/>
+                            <constraint firstItem="RLJ-Gn-Z2e" firstAttribute="leading" secondItem="irt-GJ-zmx" secondAttribute="leading" id="uQc-Hx-Z2G"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cancelBN" destination="MJl-b2-g9n" id="fkL-hL-tYf"/>
+                        <outlet property="previewView" destination="RLJ-Gn-Z2e" id="ykt-e2-Byp"/>
+                        <outlet property="sharingDestinationIconView" destination="2r9-mv-OFM" id="twG-to-aAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQa-Nj-uIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="412"/>
+        </scene>
+    </scenes>
+</document>

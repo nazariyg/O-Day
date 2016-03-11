@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>O'Day</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb123456789012345</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>12</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>abc123abc123abc123abc123abc123abc123abc1</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>abc123abc123abc123abc123a</string>
+					<key>consumerSecret</key>
+					<string>abc123abc123abc123abc123abc123abc123abc123abc123ab</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>123456789012345</string>
+	<key>FacebookDisplayName</key>
+	<string>O'Day</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+		<string>twitter</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>akamaihd.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>facebook.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>fbcdn.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Import events from Calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Use your photos to create custom backgrounds.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use your photos to create custom backgrounds.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>akaFrivolity.ttf</string>
+		<string>Always Together.otf</string>
+		<string>ank.ttf</string>
+		<string>Archistico Bold.ttf</string>
+		<string>ATypewriterForMe.ttf</string>
+		<string>BALLW___.TTF</string>
+		<string>Behind Lines.ttf</string>
+		<string>Bernardo Moda Semibold.ttf</string>
+		<string>Betty Regular.ttf</string>
+		<string>blackboardultra.otf</string>
+		<string>BLACKJAR.TTF</string>
+		<string>calendar note tfb.ttf</string>
+		<string>Cardenio Modern Std.ttf</string>
+		<string>Castal Street Bold.ttf</string>
+		<string>CHRICI__.TTF</string>
+		<string>ClaireHandLight.ttf</string>
+		<string>colleges.ttf</string>
+		<string>Darlin' Pop.ttf</string>
+		<string>DCC - The alien are coming.ttf</string>
+		<string>DIRTYEGO.TTF</string>
+		<string>duality.ttf</string>
+		<string>dum3thin.ttf</string>
+		<string>Feronia.ttf</string>
+		<string>Fineliner_Script.ttf</string>
+		<string>Florence-Regular.otf</string>
+		<string>Fonesia-Light.ttf</string>
+		<string>FONTLERO.TTF</string>
+		<string>goodvibes.ttf</string>
+		<string>Gruenewald VA normal.ttf</string>
+		<string>Hoedown.ttf</string>
+		<string>Huruf Miranti.ttf</string>
+		<string>Italian Revolution.ttf</string>
+		<string>jandles.ttf</string>
+		<string>Kurnia.ttf</string>
+		<string>Litos Script regular.otf</string>
+		<string>Little days.ttf</string>
+		<string>Little Principessa.ttf</string>
+		<string>Lobster 1.4.otf</string>
+		<string>Love.ttf</string>
+		<string>Maharani.otf</string>
+		<string>Making-Lettering-Tall_demo.ttf</string>
+		<string>MarketingScript.ttf</string>
+		<string>MISTRESS.ttf</string>
+		<string>Monthoers.ttf</string>
+		<string>morado felt.ttf</string>
+		<string>Nickainley.ttf</string>
+		<string>On The Wagon.ttf</string>
+		<string>OptimusPrinceps.ttf</string>
+		<string>OstrichSans-Heavy.otf</string>
+		<string>Pacifico.ttf</string>
+		<string>peach-sundress.ttf</string>
+		<string>PlaydateBold.ttf</string>
+		<string>Punk_s_not_dead.ttf</string>
+		<string>Ralphie Brown Regular.ttf</string>
+		<string>RHUMBASC.TTF</string>
+		<string>RIOTSQUA.TTF</string>
+		<string>saladfingers.ttf</string>
+		<string>Saniretro.ttf</string>
+		<string>Scrappy-looking_demo.ttf</string>
+		<string>Skeleton Key.ttf</string>
+		<string>Sketchtica.ttf</string>
+		<string>SLABS THIN.otf</string>
+		<string>SpringsteelSerif-Thin.otf</string>
+		<string>Sunshine State.ttf</string>
+		<string>Sweethearts Love Letters_2.ttf</string>
+		<string>take_out_the_garbage.ttf</string>
+		<string>Tegak Bersambung_IWK.ttf</string>
+		<string>That_'s Font Folks!.ttf</string>
+		<string>typewcond_demi.otf</string>
+		<string>Typewriterhand.ttf</string>
+		<string>We Are In Love.ttf</string>
+		<string>Wenceslas.ttf</string>
+		<string>Witched.TTF</string>
+		<string>Zombie_Holocaust.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

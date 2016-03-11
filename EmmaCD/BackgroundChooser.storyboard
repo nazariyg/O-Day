@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="44a-fP-1Sc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Background Chooser View Controller-->
+        <scene sceneID="Fwf-Cf-uTo">
+            <objects>
+                <viewController id="44a-fP-1Sc" customClass="BackgroundChooserViewController" customModule="EmmaCD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nrM-AC-Qt5"/>
+                        <viewControllerLayoutGuide type="bottom" id="46u-fy-t3o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YKz-wi-8sn" customClass="KBDismissiveView" customModule="EmmaCD" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuM-cW-1S6">
+                                <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-db-pBQ" customClass="UISegmentedTextControl" customModule="EmmaCD" customModuleProvider="target">
+                                <rect key="frame" x="24" y="20" width="552" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="tW0-Xq-jxA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="OVERLAY"/>
+                                    <segment title="PICTURE"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="60" y="36" width="680" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backgroundKindSCAction" destination="44a-fP-1Sc" eventType="valueChanged" id="ZcF-2R-SSb"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uuM-cW-1S6" firstAttribute="bottom" secondItem="46u-fy-t3o" secondAttribute="top" id="5c9-Cj-WXU"/>
+                            <constraint firstItem="jeb-db-pBQ" firstAttribute="width" secondItem="YKz-wi-8sn" secondAttribute="width" multiplier="0.92" placeholder="YES" id="GiP-zH-vog"/>
+                            <constraint firstItem="jeb-db-pBQ" firstAttribute="centerX" secondItem="YKz-wi-8sn" secondAttribute="centerX" id="HIK-3h-xEq"/>
+                            <constraint firstItem="uuM-cW-1S6" firstAttribute="leading" secondItem="YKz-wi-8sn" secondAttribute="leading" id="NbW-MI-lS6"/>
+                            <constraint firstItem="jeb-db-pBQ" firstAttribute="width" secondItem="YKz-wi-8sn" secondAttribute="width" multiplier="0.58" id="ONw-qH-6aD"/>
+                            <constraint firstAttribute="trailing" secondItem="uuM-cW-1S6" secondAttribute="trailing" id="Puv-vK-q59"/>
+                            <constraint firstItem="jeb-db-pBQ" firstAttribute="width" secondItem="YKz-wi-8sn" secondAttribute="width" multiplier="0.92" id="YQ0-qG-QdU"/>
+                            <constraint firstItem="uuM-cW-1S6" firstAttribute="top" secondItem="jeb-db-pBQ" secondAttribute="bottom" id="bhl-h6-7BW"/>
+                            <constraint firstItem="jeb-db-pBQ" firstAttribute="top" secondItem="nrM-AC-Qt5" secondAttribute="bottom" id="ilL-Sr-c6l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ONw-qH-6aD"/>
+                                <exclude reference="YQ0-qG-QdU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="YQ0-qG-QdU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="ONw-qH-6aD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="backgroundKindSC" destination="jeb-db-pBQ" id="xRv-gN-orF"/>
+                        <outlet property="panelView" destination="uuM-cW-1S6" id="Bwv-lQ-WQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1u0-CM-miU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="517"/>
+        </scene>
+    </scenes>
+</document>
